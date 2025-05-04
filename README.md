@@ -4,6 +4,18 @@
 
 ---
 
+## Tekoälyn käyttö tässä tehtävässä
+
+Tässä tehtävässä tekoälyä (ChatGPT 4o ja o4-mini-high) käytettiin seuraaviin:
+
+- Koodin selittämiseen ja opetteluun
+
+- Tämän README.md-tiedoston kieliasun parantamiseen
+
+Tekoälyä **ei käytetty** generoimaan koodia.
+
+---
+
 ## Mitä ohjelma tekee?
 
 Ohjelma demonstroi Pythonin metaohjelmointia seuraavasti:
@@ -67,13 +79,3 @@ class Laskin(metaclass=Metaluokka):
 ```
 
 Kaikki dekoraattorilla käärityt laskutoimitukset syntyvät automaattisesti ilman että niitä kirjoitetaan Laskin-luokan sisälle manuaalisesti. Tämä on hyvä esimerkki siitä, miten metaohjelmointi voi automatisoida luokkien rakentamista ja/tai laajentamista.
-
-## Tekoälyn käyttö tässä tehtävässä
-
-Tässä tehtävässä tekoälyä (ChatGPT 4o ja o4-mini-high) käytettiin seuraaviin:
-
-- Koodin selittämiseen ja opetteluun
-
-- Tämän README.md-tiedoston kieliasun parantamiseen
-
-Tekoälyä **ei käytetty** generoimaan koodia.
