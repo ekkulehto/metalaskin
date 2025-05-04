@@ -29,7 +29,7 @@ class Metaluokka(type):
 def dekoraattori(func):
     # dekoraattori käärii alkuperäisen funktion ja käsittelee sen tulostuksen
 
-    def kääritty_alkuperäinen_funktio(*args):
+    def kääritty_alkuperäinen_funktio(*args, **kwargs):
         # puretaan args-tuplesta alkuperäisen funktion argumentit (a, b)
         a, b = args
 
@@ -37,8 +37,8 @@ def dekoraattori(func):
         print(
             f"Lukujen {a} ja {b} {func.__name__} on ", end="")
 
-        # kutsutaan alkuperäistä funktiota ja tulostetaan sen laskutoimituksen tulos
-        print(func(*args))
+        # kutsutaan alkuperäistä funktiota ja palautetaan sen laskutoimituksen tulos
+        return func(*args, **kwargs)
 
     # palautetaan uusi kääritty funktio
     return kääritty_alkuperäinen_funktio
@@ -80,13 +80,13 @@ if __name__ == "__main__":
             # kutsutaan valittua laskutoimitusta (jotka metaluokka on lisännyt laskimeen)
             match valinta:
                 case "1":
-                    Laskin.summa(eka_luku, toka_luku)
+                    print(Laskin.summa(eka_luku, toka_luku))
                 case "2":
-                    Laskin.erotus(eka_luku, toka_luku)
+                    print(Laskin.erotus(eka_luku, toka_luku))
                 case "3":
-                    Laskin.tulo(eka_luku, toka_luku)
+                    print(Laskin.tulo(eka_luku, toka_luku))
                 case "4":
-                    Laskin.osamäärä(eka_luku, toka_luku)
+                    print(Laskin.osamäärä(eka_luku, toka_luku))
 
         # virheenkäsittely
         except ValueError:
