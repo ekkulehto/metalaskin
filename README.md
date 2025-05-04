@@ -15,7 +15,7 @@ Ohjelma demonstroi Pythonin metaohjelmointia seuraavasti:
 
 Esimerkiksi käyttäjän valitessa laskuoperaatio "summa" ja luvut (1, 1) ohjelma tulostaa:
 
-```bash
+```
 Valitse laskutoimitus [enter lopettaa]
 
 1: summa
@@ -66,4 +66,14 @@ class Laskin(metaclass=Metaluokka):
     pass
 ```
 
-Kaikki dekoraattorilla käärityt laskutoimitukset syntyvät automaattisesti ilman että niitä kirjoitetaan Laskin-luokan sisälle manuaalisesti. Tämä on hyvä esimerkki siitä, miten metaohjelmointi voi automatisoida luokkien rakentamista ja/tai laajentamista..
+Kaikki dekoraattorilla käärityt laskutoimitukset syntyvät automaattisesti ilman että niitä kirjoitetaan Laskin-luokan sisälle manuaalisesti. Tämä on hyvä esimerkki siitä, miten metaohjelmointi voi automatisoida luokkien rakentamista ja/tai laajentamista.
+
+## Tekoälyn käyttö tässä tehtävässä
+
+Tässä tehtävässä tekoälyä (ChatGPT 4o ja o4-mini-high) käytettiin seuraaviin:
+
+- Koodin selittämiseen ja opetteluun
+
+- Tämän README.md-tiedoston kieliasun parantamiseen
+
+Tekoälyä **ei käytetty** generoimaan koodia.
