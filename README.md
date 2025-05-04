@@ -45,11 +45,16 @@ Lukujen 1 ja 1 summa on 2
 
 ## Miten ohjelmaa ajetaan?
 
-1. **Lataa** tämä repositorio:
+1. **Lataa tai kloonaa** tämä repositorio:
+
+   ```
+   git clone https://github.com/ekkulehto/metalaskin.git
+   ```
 
 2. Suorita Python-tiedosto:
 
    ```
+   cd metalaskin
    python metalaskin.py
    ```
 
