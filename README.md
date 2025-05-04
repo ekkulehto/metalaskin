@@ -38,7 +38,7 @@ Valitse laskutoimitus [enter lopettaa]
 Valinta: 1
 Anna ensimmäinen luku: 1
 Anna toinen luku luku: 1
-Lukujen 1 ja 1 summa on 2
+Lukujen (1, 1) summa on 2
 ```
 
 ---

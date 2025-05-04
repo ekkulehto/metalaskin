@@ -6,7 +6,7 @@ class Metaluokka(type):
         print(f"| Metaluokka luo ja rakentaa luokan {clsname} |")
         print("‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾")
 
-        # määritellään laskimen funktiot
+        # määritellään laskimen funktiot (esimerkin vuoksi metaluokan sisällä)
         def summa(a, b): return a + b
         def erotus(a, b): return a - b
         def tulo(a, b): return a * b
@@ -30,12 +30,10 @@ def dekoraattori(func):
     # dekoraattori käärii alkuperäisen funktion ja käsittelee sen tulostuksen
 
     def kääritty_alkuperäinen_funktio(*args, **kwargs):
-        # puretaan args-tuplesta alkuperäisen funktion argumentit (a, b)
-        a, b = args
 
         # tulostetaan laskutoimituksen kuvaus annetuilla argumenteilla ja funktion nimellä
         print(
-            f"Lukujen {a} ja {b} {func.__name__} on ", end="")
+            f"Lukujen {args} {func.__name__} on ", end="")
 
         # kutsutaan alkuperäistä funktiota ja palautetaan sen laskutoimituksen tulos
         return func(*args, **kwargs)
